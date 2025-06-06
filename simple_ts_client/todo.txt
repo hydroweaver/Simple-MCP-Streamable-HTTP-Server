@@ -1,0 +1,12 @@
+Check client examples
+
+Running simple remote playwright on a server and calling from Claude
+ - This has some issue, working on C:\Users\hydro\Downloads\projects\playwright_mcp_programmatic
+ and opened an issue 
+
+
+Learn the stuff on repo with testing, how doe sit work, see issues....auto tests etc.
+
+Client running on server which sends requests to port 8931 localhost running... 2 servers on the same machine, I dont know if https://github.com/microsoft/playwright-mcp/issues/529 (server.connect) will be resolved for me to just make it simpler
+
++ Check Auth page

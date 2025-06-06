@@ -2,6 +2,9 @@
 // From https://github.com/modelcontextprotocol/typescript-sdk?tab=readme-ov-file#streamable-http
 //Run on express and expose via ngrok
 // Just use the exposed URL with /mcp on the MCP inspector with Streamable HTTP
+// npm i
+// npm run build
+// npm start
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -10,8 +13,10 @@ const mcp_js_1 = require("@modelcontextprotocol/sdk/server/mcp.js");
 const streamableHttp_js_1 = require("@modelcontextprotocol/sdk/server/streamableHttp.js");
 const express_1 = __importDefault(require("express"));
 const zod_1 = require("zod");
+require("dotenv/config");
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
+require('dotenv').config();
 const PORT = 3000;
 app.post('/mcp', async (req, res) => {
     // In stateless mode, create a new instance of transport and server for each request

@@ -4,3 +4,5 @@
 4. npm i
 5. npm run build
 6. npm start
+7. todo
+   1. playwright npx on local to be called by anthropic
